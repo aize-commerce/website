@@ -1,0 +1,77 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Contact | ${SITE_TITLE}`} description="Get in touch for technical advisory and architecture work." />
+		<style>
+			form {
+				display: flex;
+				flex-direction: column;
+				gap: 1rem;
+				max-width: 500px;
+			}
+			label {
+				display: flex;
+				flex-direction: column;
+				gap: 0.25rem;
+			}
+			input, textarea {
+				padding: 0.5rem;
+				border: 1px solid rgb(var(--gray-light));
+				border-radius: 4px;
+				font-family: inherit;
+				font-size: 1rem;
+			}
+			textarea {
+				min-height: 150px;
+				resize: vertical;
+			}
+			button {
+				padding: 0.75rem 1.5rem;
+				background: rgb(var(--black));
+				color: white;
+				border: none;
+				border-radius: 4px;
+				font-size: 1rem;
+				cursor: pointer;
+				align-self: flex-start;
+			}
+			button:hover {
+				background: rgb(var(--gray-dark));
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Contact</h1>
+			<p>
+				Describe what you're working on and what kind of help you're looking for.
+				I'll respond if it seems like a good fit.
+			</p>
+
+			<form action="https://formspree.io/f/xojdvqal" method="POST">
+				<label>
+					Name
+					<input type="text" name="name" required />
+				</label>
+				<label>
+					Email
+					<input type="email" name="email" required />
+				</label>
+				<label>
+					Message
+					<textarea name="message" required></textarea>
+				</label>
+				<button type="submit">Send</button>
+			</form>
+		</main>
+		<Footer />
+	</body>
+</html>

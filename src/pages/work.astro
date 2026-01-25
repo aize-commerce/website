@@ -1,0 +1,128 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Work | ${SITE_TITLE}`} description="Architectural reviews, platform decisions, system design, and technical advisory for teams navigating high-impact software decisions." />
+		<style>
+			.work h2 {
+				margin-top: 2.5rem;
+				margin-bottom: 0.75rem;
+				font-size: 1.5rem;
+			}
+			.work h2:first-of-type {
+				margin-top: 2rem;
+			}
+			.work p {
+				margin-bottom: 1rem;
+			}
+			.work ul {
+				margin: 0 0 1rem 0;
+				padding-left: 1.25rem;
+			}
+			.work li {
+				margin-bottom: 0.25rem;
+			}
+			.cta {
+				margin-top: 2.5rem;
+			}
+			.cta a {
+				text-decoration: none;
+				border-bottom: 1px solid rgb(var(--gray));
+			}
+			.cta a:hover {
+				border-bottom-color: rgb(var(--black));
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<article class="work">
+				<h1>Work</h1>
+				<p>
+					I work with teams on high-impact technical decisions — the points where
+					architecture, platforms, and system design shape what becomes possible later.
+				</p>
+				<p>
+					My involvement is focused on clarity and direction rather than volume of delivery.
+					Engagements are typically scoped around specific phases where decisions are
+					expensive to reverse.
+				</p>
+
+				<h2>Architectural Reviews & System Audits</h2>
+				<p>I review existing systems to surface structural risks and decision bottlenecks.</p>
+				<p>This includes:</p>
+				<ul>
+					<li>system boundaries and coupling</li>
+					<li>integration patterns and constraints</li>
+					<li>scalability and maintainability risks</li>
+					<li>assumptions baked into the architecture that no longer hold</li>
+				</ul>
+				<p>
+					The outcome is a clear picture of trade-offs and options — designed to
+					support your decision, not prescribe mine.
+				</p>
+
+				<h2>Platform & Technology Decisions</h2>
+				<p>Platform choices create long-term leverage — and long-term cost.</p>
+				<p>
+					I support teams evaluating or re-evaluating platforms such as Adobe Commerce,
+					Shopify, Salesforce, and custom systems, with attention to:
+				</p>
+				<ul>
+					<li>whether it actually fits how the business operates</li>
+					<li>extensibility and integration constraints</li>
+					<li>long-term ownership cost and complexity</li>
+				</ul>
+				<p>The goal is to reduce uncertainty before commitment.</p>
+
+				<h2>System Boundaries & Integration Design</h2>
+				<p>As systems grow, integration becomes the primary source of complexity.</p>
+				<p>I help teams reason about:</p>
+				<ul>
+					<li>system ownership and boundaries</li>
+					<li>responsibility and data flow</li>
+					<li>where to decouple and where coordination is necessary</li>
+					<li>how architectural decisions age over time</li>
+				</ul>
+				<p>
+					This work often happens ahead of large initiatives, migrations, or multi-team efforts.
+				</p>
+
+				<h2>Advisory Engagements</h2>
+				<p>
+					Some teams need a one-time review. Others want ongoing access to someone
+					who can pressure-test decisions, join planning conversations, or provide
+					guidance during transitions.
+				</p>
+				<p>
+					I've done both. The format depends on what you're navigating — the goal
+					is the same: keep the architecture coherent as the system and organization evolve.
+				</p>
+
+				<h2>Engagements</h2>
+				<p>
+					Work usually begins with a conversation to understand context, constraints,
+					and decision points.
+				</p>
+				<p>From there, engagements are typically structured as:</p>
+				<ul>
+					<li>a focused review or audit</li>
+					<li>a time-bound advisory phase</li>
+					<li>or an ongoing advisory relationship</li>
+				</ul>
+
+				<p class="cta">
+					<a href="/contact">Start a conversation</a>
+				</p>
+			</article>
+		</main>
+		<Footer />
+	</body>
+</html>
