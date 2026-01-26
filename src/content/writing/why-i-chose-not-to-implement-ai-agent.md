@@ -66,4 +66,4 @@ I could have chosen to go ahead and build the AI agent anyways but I don't like 
 
 I don’t see a good application of AI agents in the decision layer here, because the decision surface is already well-defined and the risk belongs to the business, not the system.
 
-İf you're trying to make similar decisions and want to have a chat. Feel free to send me an email [mailto:berkan.duzgun@aizetech.nl](berkan.duzgun@aizetech.nk) Would be happy to think along.
+İf you're trying to make similar decisions and want to have a chat. Feel free to send me an email [berkan.duzgun@aizetech.nl](mailto:berkan.duzgun@aizetech.nk) Would be happy to think along.
