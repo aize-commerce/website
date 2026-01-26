@@ -4,8 +4,6 @@ description: "A Shopify app case study on dead stock detection, inventory decisi
 pubDate: 2025-01-26
 ---
 
-Everybody including me wants to do something useful with the AI. Many companies are sold into the dream and many products out there claiming smart solutions via AI when actually it's clearly a bad design decision. I might write about these and criticize the market later but today it's not my focus.
-
 Recently I worked on a Shopify app. The specs were great. On the surface it looked like I can finally develop an AI agent that will actually make decisions in a business cycle.
 
 The app is about detecting dead stocks or products with declining sales.
@@ -45,7 +43,7 @@ I initially detected declining sales and forecasting based on linear regression.
 
 I was excited finally I was gonna implement a proper AI agent into e-commerce. Only to realize later that this was also very much deterministic.
 
-First of all my threshold might just be normal fluctuations of sales velocity and that can be variable based on the store and the nature of the product. İt could also be the case the product was in promotion 2 months ago. İt can also be the case it was Black Friday 1 month ago. İt could be that the products is a cost while not it's April aka seasonality. I could have let the AI decide based on all these facts if the read decline is normal or something that would cause the stock to be flagged as dead or dying stock.
+First of all my threshold might just be normal fluctuations of sales velocity and that can be variable based on the store and the nature of the product. İt could also be the case the product was in promotion 2 months ago. İt can also be the case it was Black Friday 1 month ago. İt could be that the products is a winter coat while now it's April aka seasonality. I could have let the AI decide based on all these facts if the read decline is normal or something that would cause the stock to be flagged as dead or dying stock.
 
 You must have noticed it. These are all deterministic factors that can be coded. Leaving it to the fuzzy AI reasoning would actually be doing the same work by prompting and extra tooling for the AI agent. Which obviously is not a great design and a forceful implementation.
 
@@ -56,16 +54,16 @@ The measure for me are two simple factors working together.
 - Responsibility 
 - Visibility
 
-İn our case AI implementation passed this test. Because the app was taking bounded actions with visible impact. And it was reducing the human need for managing and aspect of the inventory.
+In our case AI implementation passed this test. Because the app was taking bounded actions with visible impact. And it was reducing the human need for managing and aspect of the inventory.
 
 And by design the app was going to either be trusted to act autonomously or present the action as suggestion on the report sent to the merchant.
 
 With good monitoring the visibility was there and the responsibility was taken by the person who approved autonomous action.
 
-When I removed the decision of selecting the products to be actioned upon from the AI. What I noticed was sad. The only remaining applicability of the AI agents was the email drafting part. Then all the fancy AI agents working together coolness disappeared.
+**But** when I removed the decision of selecting the products to be actioned upon from the AI. What I noticed was sad. The only remaining applicability of the AI agents was the email drafting part. Then all the fancy AI agents working together coolness disappeared.
 
 I could have chosen to go ahead and build the AI agent anyways but I don't like pretending to be doing something useful when I'm actually making bad systems design. This app needs to live without the AI agents (except the email drafting part ).
 
 I don’t see a good application of AI agents in the decision layer here, because the decision surface is already well-defined and the risk belongs to the business, not the system.
 
-İf you're trying to make similar decisions and want to have a chat. Feel free to send me an email `berkan.duzgun@aizetech.nl` . Would be happy to think along.
+İf you're trying to make similar decisions and want to have a chat. Feel free to send me an email [mailto:berkan.duzgun@aizetech.nl](berkan.duzgun@aizetech.nk) Would be happy to think along.
