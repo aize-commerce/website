@@ -1,0 +1,85 @@
+---
+interface Props {
+	buttondownUsername?: string;
+}
+
+const { buttondownUsername = "aize" } = Astro.props;
+const formAction = `https://buttondown.com/api/emails/embed-subscribe/${buttondownUsername}`;
+---
+
+
+<aside class="newsletter">
+	<p class="newsletter-title">Stay updated</p>
+	<p class="newsletter-text">Get notified when I publish new posts on architecture decisions, e-commerce systems, and technical strategy.</p>
+	<form
+		action={formAction}
+		method="post"
+		target="popupwindow"
+		class="newsletter-form"
+	>
+		<input
+			type="email"
+			name="email"
+			placeholder="Your email"
+			required
+			class="newsletter-input"
+		/>
+		<button type="submit" class="newsletter-button">Subscribe</button>
+	</form>
+	<p class="newsletter-note">No spam. Unsubscribe anytime.</p>
+</aside>
+
+<style>
+	.newsletter {
+		margin-top: 2rem;
+		padding: 1.5rem;
+		background: rgb(var(--gray-light), 0.3);
+		border-radius: 8px;
+	}
+	.newsletter-title {
+		font-weight: 600;
+		margin-bottom: 0.5rem;
+	}
+	.newsletter-text {
+		color: rgb(var(--gray));
+		margin-bottom: 1rem;
+		font-size: 0.95rem;
+		line-height: 1.5;
+	}
+	.newsletter-form {
+		display: flex;
+		gap: 0.5rem;
+		flex-wrap: wrap;
+	}
+	.newsletter-input {
+		flex: 1;
+		min-width: 200px;
+		padding: 0.6rem 0.8rem;
+		border: 1px solid rgb(var(--gray-light));
+		border-radius: 4px;
+		font-size: 0.95rem;
+		font-family: inherit;
+	}
+	.newsletter-input:focus {
+		outline: none;
+		border-color: rgb(var(--gray));
+	}
+	.newsletter-button {
+		padding: 0.6rem 1.2rem;
+		background: rgb(var(--black));
+		color: white;
+		border: none;
+		border-radius: 4px;
+		font-size: 0.95rem;
+		font-family: inherit;
+		cursor: pointer;
+	}
+	.newsletter-button:hover {
+		background: rgb(var(--gray-dark));
+	}
+	.newsletter-note {
+		margin-top: 0.75rem;
+		font-size: 0.8rem;
+		color: rgb(var(--gray));
+	}
+</style>
