@@ -18,7 +18,10 @@ The second aspect is the locked capital into the inventory that's not cycling. Y
 
 It's similar to holding a losing position on your investment portfolio. Yes you might break even one day if you just hold it long enough. But then you're not allowed to use that capital elsewhere.
 
-> Merchants need a stop loss on losing positions (dead stock) just like in trading and investing
+> Inventory behaves like capital.  
+> Dead stock needs a stop-loss, just like a losing position in trading.
+
+This is what the app was designed to surface automatically.
 
 ## What was the app doing?
 
