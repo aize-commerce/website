@@ -1,0 +1,21 @@
+# Aize
+
+> Technical architecture for systems that can't afford wrong decisions.
+
+Aize is a technical advisory practice run by Berkan Düzgün, a systems architect based in Europe.
+
+## Focus Areas
+- Software architecture and system design
+- Platform selection and evaluation
+- E-commerce systems (Adobe Commerce/Magento, Salesforce, Intershop)
+- Integration strategy and boundary definition
+- Technical decision support
+
+## Content
+- /about - Background and experience
+- /writing - Articles on trade-offs, platform choices, and durable system design
+- /contact - Get in touch
+
+## Contact
+- Website: https://aizetech.nl
+- LinkedIn: https://www.linkedin.com/in/berkanduzgun/
